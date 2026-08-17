@@ -3,13 +3,11 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Demo2 {
-
-    public staticc void main(String[] args) throws ClassNotFoundException, SQLException {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/universalit";
         String uname = "root";
         String password = "Ravya@123";
-        /*sout ---> Nupur*/
         Connection con = DriverManager.getConnection(url, uname, password);
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery("select * from accounts");
