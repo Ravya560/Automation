@@ -3,7 +3,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Demo2 {
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    public staticc void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/universalit";
         String uname = "root";
